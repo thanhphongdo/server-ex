@@ -1,0 +1,7 @@
+apps:
+  - script      : 'index.js'
+    name        : 'Social API'
+    exec_mode   : 'cluster'
+    instances   : max
+    env         :
+      ENV    : dev

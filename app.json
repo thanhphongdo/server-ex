@@ -1,0 +1,28 @@
+{
+  "name": "example",
+  "repository": "http://git.innoria.com/server/example",
+  "env": {
+    "APP_NAME": {
+      "description": "A unique identifier for your app.",
+      "value": "example"
+    },
+    "PARSE_MOUNT": {
+      "description": "Configure Parse API route.",
+      "value": "/sclb-api"
+    },
+    "APP_ID": {
+      "description": "A unique identifier for your app.",
+      "value": "SCLB-APP-ID"
+    },
+    "MASTER_KEY": {
+      "description": "A key that overrides all permissions. Keep this secret.",
+      "value": "SCLB-MSTK"
+    },
+    "DATABASE_URI": {
+      "description": "Connection string for your database.",
+      "value": "$SCALINGO_MONGO_URL"
+    }
+  },
+  "image": "heroku/nodejs",
+  "addons": ["mongolab"]
+}

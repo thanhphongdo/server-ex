@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "social-server",
+            "cwd": ".",
+            "script": "index.js",
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "instances": 4,
+            "max_memory_restart": "1024M",
+            "exec_interpreter": "node",
+            "exec_mode": "cluster",
+            "autorestart": true,
+            "env": {
+                "ENV": "local"
+            }
+        }
+    ]
+}
